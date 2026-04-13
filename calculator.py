@@ -11,12 +11,14 @@ def mul(a, b):
 
 def div(a, b): 
     if a == 0:
-        raise ZeroDivisionError 
+        raise ZeroDivisionError("Divide by zero error")
     return b / a 
 
 def log(a, b): 
-    if b==0:
-        raise ValueError
+    if a<= 1 or a == 1:
+        raise ValueError("Logarithmic error, base must be greater than 1")
+    if b<=0:
+        raise ValueError("Logarithmic error, must be greater than 0")
     
     return math.log(b,a)
 
