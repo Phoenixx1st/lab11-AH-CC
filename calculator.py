@@ -1,20 +1,16 @@
+#https://github.com/Phoenixx1st/lab11-AH-CC.git
+# Partner 1: Aaron Robertson
+# Partner 2: Camila Cabello
 import math
-def add(a, b):
 
 # Calculator functions
 def square_root(a):
-    try:
-        if a < 0:
-            raise ValueError("Square root error, a must be positive")
-        return math.sqrt(a)
-    except Exception as e:
-        return f"Error: {e}"
+    if a < 0:
+        raise ValueError("Square root error, a must be positive")
+    return math.sqrt(a)
 
 def hypotenuse(a, b):
-    try:
         return math.hypot(a, b)
-    except Exception as e:
-        return f"Error: {e}"
 
 
 def add(a, b):
